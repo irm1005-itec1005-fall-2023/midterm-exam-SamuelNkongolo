@@ -1,37 +1,86 @@
-/*
- * CSS File for the solution
- * Midterm Exam
- * You got this!
- */
-
-/*
- * COLOUR PALETTE
- *
- * YOU DO NOT NEED TO USE THESE COLOURS, BUT YOU CAN IF YOU WANT TO
- *   #ede0d4
- *   #e6ccb2
- *   #ddb892
- *   #b08968
- *   #7f5539
- *   #9c6644
- *
- * https://coolors.co/palette/ede0d4-e6ccb2-ddb892-b08968-7f5539-9c6644
- */
-
-/*
- * The width of my Product Card in the screenshot was 400px
- * You can use that width or set your own width
- */
-
-/*
- * HINT: For making image fill the container use object-fit:cover property:
- *  https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
- */
-
-html {
-  font-size: 1.0rem;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: beige;
+  background-image: url(./images/beans.jpg);
+  background-size: 100%;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  background-color: #3498db;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  box-shadow: 0 8px 12px rgba(188, 11, 11, 0.3);
+}
+
+.image-container {
+  max-width: 100;
+  max-height: 100%;
+  overflow: hidden;
+  object-fit: contain;
+  border-radius: 20px 20px 0 0
+}
+
+.box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.box2{
+  width: 300px;
+  display: flex;
+  flex-direction: column; /* Make text go under each other */
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 10px;
+  background-color: white;
+  align-items: left;
+  color: brown;
+  text-align: left;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+  align-items: left;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-size: small;
+}
+
+.price{
+  font-size: 50px;
+  text-align: left;
+}
+
+.button{
+  border: none;
+  color: white;
+  background-color: brown;
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer;
+  width: 250px; 
 }
